@@ -1,13 +1,16 @@
 .header {
-  background-color: white;
+  max-width: 1440px;
+  margin: 8px auto;
   z-index: 10;
+  background-color: white;
   .nav {
     display: flex;
     align-items: center;
     vertical-align: middle;
-    padding: 0 0.5rem;
+    padding: 0 8px;
     &__logo {
-      padding: 0 0.5rem;
+      width: 200px;
+      padding: 0 8px;
     }
     &__hamburguer {
       display: none;
@@ -18,7 +21,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      padding: 0.5rem 1rem;
+      padding: 8px 16px;
     }
     &__menu {
       flex-grow: 1;
@@ -27,17 +30,12 @@
     &__links {
       display: flex;
       flex-direction: column;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
-      flex-direction: row;
-      margin-right: auto !important;
       &--link {
-        font-size: 16px;
-        line-height: 24px;
+        padding: 0 8px;
         color: #000000;
+        font-size: 16px;
         font-weight: 600;
-        padding: 0 0.5rem;
+        line-height: 24px;
       }
     }
     &__search {
@@ -48,9 +46,9 @@
     }
     &__cart {
       display: flex;
-      vertical-align: middle;
+      margin-top: 6px;
       a {
-        padding: 0 0.5rem;
+        padding: 0 8px;
       }
       &--button {
         font-size: 24px;

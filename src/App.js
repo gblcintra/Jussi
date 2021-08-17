@@ -9,10 +9,8 @@ import Routes from './routes';
 
 export default function App() {
     return (
-        <BrowserRouter>  
-            {/* <div className="container"> */}
-                <Routes/>
-            {/* </div>      */}
+        <BrowserRouter>
+            <Routes />
         </BrowserRouter>
     );
 }

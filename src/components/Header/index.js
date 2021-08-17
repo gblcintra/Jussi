@@ -2,7 +2,7 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logoJussiVectorGreen.svg';
 
 import { FiShoppingCart } from "react-icons/fi";
 import Search from '../Search';
