@@ -18,7 +18,7 @@ export default function Header() {
             <img src={logo} alt="Logo" />
           </a>
           <div className="nav__hamburguer">
-            <button type="button" role="button" className="navbar-burger menu-mobile-header" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <button type="button" className="navbar-burger menu-mobile-header" data-target="navMenu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>

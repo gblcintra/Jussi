@@ -11,7 +11,6 @@ export default function Search() {
   async function searchResult(query) {
     try {
       const response = await api.get(`?query=${query}&per_page=5`);
-      console.log("🚀 ~ file: index.js ~ line 14 ~ searchResult ~ response", response.data.photos.photographer)
       setImagemPexels(response.data.photos);
     } catch (err) {
       // console.error(err);
@@ -22,7 +21,6 @@ export default function Search() {
       document.getElementById('result')?.classList.add('active')
     }
   }
-  console.log(imagemPexels)
 
   const handleOnInputChange = (event) => {
     const query = event.target.value;
@@ -61,7 +59,7 @@ export default function Search() {
             {imagemPexels.map((imagem) => (
               <a className="result__context" key={imagem.id} target="__blank" href={imagem.photographer_url}>
                 <div className="result__item">
-                  <img className="result__item--image" src={imagem.src.small} alt={`${imagem.photographer} image`} />
+                  <img className="result__item--image" src={imagem.src.small} alt={imagem.photographer} />
                 </div>
                 <h6 className="result__item--autor">{imagem.photographer}</h6>
               </a>
