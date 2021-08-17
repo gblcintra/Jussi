@@ -4,6 +4,7 @@
   z-index: 10;
   background-color: white;
   user-select: none;
+  padding: 0 16px;
 
   .nav {
     display: flex;
@@ -11,11 +12,19 @@
     vertical-align: middle;
     padding: 0 8px;
     &__logo {
-      width: 200px;
+      max-width: 200px;
+      width: 100%;
       padding: 0 8px;
     }
     &__hamburguer {
       display: none;
+      @media screen and(max-width:1080px) {
+        display: block;
+      }
+      button{
+        font-size: 24px;
+        border: 0;
+      }
     }
     &__menu {
       position: relative;
@@ -24,6 +33,9 @@
       align-items: center;
       justify-content: space-between;
       padding: 8px 16px;
+      @media screen and(max-width:600px) {
+        flex-wrap: initial;
+      }
     }
     &__menu {
       flex-grow: 1;
@@ -32,12 +44,18 @@
     &__links {
       display: flex;
       flex-direction: column;
+      @media screen and(max-width:1080px) {
+        display: none;
+      }
       &--link {
         padding: 0 8px;
         color: #000000;
         font-size: 16px;
         font-weight: 600;
         line-height: 24px;
+        @media screen and(max-width:1080px) {
+          display: none;
+        }
       }
     }
     &__search {

@@ -1,7 +1,7 @@
 
 import './index.scss';
 
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiArrowDown } from "react-icons/fi";
 
 import LogoBrastemp from '../../assets/logo-brastemp.svg'
 import LogoCompraCerta from '../../assets/logo-copracerta.svg'
@@ -20,7 +20,7 @@ export default function Brand() {
                     <FiArrowRight />
                 </div>
                 <div className="brand__icon--mobile">
-                    <FiArrowRight />
+                    <FiArrowDown />
                 </div>
                 <div className="brand__logo">
                     <div className="brand__image"><img src={LogoBrastemp} alt="Brastemp" /></div>

@@ -4,10 +4,17 @@
   display: flex;
   justify-content: space-around;
   user-select: none;
+  padding: 0 16px;
+  @media screen and(max-width:1080px) {
+    flex-direction: column;
+  }
 
   &__description {
     max-width: 241px;
     width: 100%;
+    @media screen and(max-width:1080px) {
+      max-width: 100%;
+    }
   }
 
   .description {
@@ -56,6 +63,10 @@
     img {
       max-width: 676px;
       width: 100%;
+      @media screen and(max-width:1080px) {
+        max-width: 100%;
+        margin: auto;
+      }
     }
   }
 }
