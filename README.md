@@ -25,6 +25,9 @@ https://react-icons.github.io/react-icons/icons?name=fi
 ## Use Sass
 This project is using Sass as a CSS pre-processor.
 
+## Use CSS BEM
+Methodology for class naming in CSS, which helps you create reusable and maintainable code.
+
 ## Requirements
 
 - [X] Usar o React como biblioteca base do projeto;
