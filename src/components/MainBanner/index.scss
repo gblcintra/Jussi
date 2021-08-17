@@ -21,6 +21,7 @@
         float: left;
       }
       &__content {
+        margin: 32px auto;
         &--text {
           width: 451px;
           font-style: normal;
@@ -31,7 +32,7 @@
         }
         &--subtext {
           width: 329px;
-          margin: 25px 0 40px;
+          margin: 16px 0 32px;
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
