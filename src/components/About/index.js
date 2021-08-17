@@ -21,7 +21,7 @@ export default function Products() {
         </div>
       </div>
       <div className="about__image" >
-        <img src={Escritorio} />
+        <img src={Escritorio} alt="Escritório" />
       </div>
     </section>
   )
