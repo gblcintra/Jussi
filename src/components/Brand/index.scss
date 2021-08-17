@@ -1,0 +1,25 @@
+.brand {
+    max-width: 1440px;
+    margin: 22px auto;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__icon {
+    }
+    &__logo {
+    }
+    &__image {
+    }
+}

@@ -9,6 +9,7 @@ import About from '../../components/About';
 import Contact from '../../components/Contact';
 import Newsletter from '../../components/Newsletter';
 import Footer from '../../components/Footer';
+import Brand from '../../components/Brand/idenx';
 
 export default function Dashboard() {
   document.title = 'Home'
@@ -23,13 +24,14 @@ export default function Dashboard() {
 
   return (
     <div>
-        <Header />
-        <Banner/>
-        <Products/>
-        <About/>
-        <Contact/>
-        <Newsletter/>
-        <Footer />
+      <Header />
+      <Banner />
+      <Brand />
+      <Products />
+      <About />
+      <Contact />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
