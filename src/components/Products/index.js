@@ -3,7 +3,7 @@ import './index.scss'
 
 export default function Products() {
 
-  //array de produtos para automatizar na construção dos produtos
+  //array de produtos para automatizar na construção dos campos
   const products = [
     {
       "id": 1,

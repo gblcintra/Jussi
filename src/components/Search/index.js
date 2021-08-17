@@ -5,16 +5,17 @@ import { FiSearch } from "react-icons/fi";
 import api from '../../services/api';
 
 export default function Search() {
+  //armazenar o array das imagens pesquisadas
   const [imagemPexels, setImagemPexels] = useState([]);
 
 
   async function searchResult(query) {
     try {
+      //api para pegar as infos com limite de 5 itens
       const response = await api.get(`?query=${query}&per_page=5`);
       setImagemPexels(response.data.photos);
     } catch (err) {
-      // console.error(err);
-      // alert('Imagem não encontrado')
+      console.error(err);
     } finally {
       document.body.classList.add('active')
       document.getElementById('dropdown').classList.add('active');
@@ -22,6 +23,7 @@ export default function Search() {
     }
   }
 
+  //função para capturar o evento de escrita
   const handleOnInputChange = (event) => {
     const query = event.target.value;
     if (!query) {
@@ -33,6 +35,7 @@ export default function Search() {
     }
   }
 
+  //reset nos campos de busca 
   const removeSearch = () => {
     document.getElementById('search__input').value = '';
     document.body.classList.remove('active')

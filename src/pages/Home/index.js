@@ -1,7 +1,4 @@
 
-// import { Link } from 'react-router-dom';
-import { useEffect } from 'react'
-// import Orders from '../Orders';
 import Header from '../../components/Header';
 import Banner from '../../components/MainBanner';
 import Products from '../../components/Products';
@@ -13,15 +10,7 @@ import Brand from '../../components/Brand/idenx';
 
 export default function Dashboard() {
   document.title = 'Home'
-
-  useEffect(() => {
-    async function loadItens() {
-
-    }
-    loadItens();
-  }, []);
-
-
+//Importaçãoo de componentes
   return (
     <div>
       <Header />

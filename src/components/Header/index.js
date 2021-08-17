@@ -21,7 +21,7 @@ export default function Header() {
           </div>
           
           <a className="nav__logo" href="/">
-            <img src={logo} alt="Logo" />
+            <img src={ logo } alt="Logo" />
           </a>
           
 

@@ -23,16 +23,16 @@ export default function Brand() {
                     <FiArrowDown />
                 </div>
                 <div className="brand__logo">
-                    <div className="brand__image"><img src={LogoBrastemp} alt="Brastemp" /></div>
+                    <div className="brand__image"><img src={ LogoBrastemp } alt="Brastemp" /></div>
                 </div>
                 <div className="brand__logo">
-                    <div className="brand__image"><img src={LogoCompraCerta} alt="Compra Certa" /></div>
+                    <div className="brand__image"><img src={ LogoCompraCerta } alt="Compra Certa" /></div>
                 </div>
                 <div className="brand__logo">
-                    <div className="brand__image"><img src={LogoConsul} alt="Consul" /></div>
+                    <div className="brand__image"><img src={ LogoConsul } alt="Consul" /></div>
                 </div>
                 <div className="brand__logo">
-                    <div className="brand__image"><img src={LogoTheBar} alt="The Bar" /></div>
+                    <div className="brand__image"><img src={ LogoTheBar } alt="The Bar" /></div>
                 </div>
             </div>
         </section>
