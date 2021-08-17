@@ -1,0 +1,61 @@
+.header {
+  background-color: white;
+  z-index: 10;
+  .nav {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0 0.5rem;
+    &__logo {
+      padding: 0 0.5rem;
+    }
+    &__hamburguer {
+      display: none;
+    }
+    &__menu {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+    }
+    &__menu {
+      flex-grow: 1;
+      align-items: center;
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      flex-direction: row;
+      margin-right: auto !important;
+      &--link {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        font-weight: 600;
+        padding: 0 0.5rem;
+      }
+    }
+    &__search {
+      display: flex;
+      width: 100%;
+      max-width: 240px;
+      margin-left: auto !important;
+    }
+    &__cart {
+      display: flex;
+      vertical-align: middle;
+      a {
+        padding: 0 0.5rem;
+      }
+      &--button {
+        font-size: 24px;
+        color: #000000;
+      }
+    }
+  }
+}
