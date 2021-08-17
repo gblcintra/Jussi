@@ -1,0 +1,61 @@
+.about {
+  max-width: 1440px;
+  margin: 56px auto;
+  display: flex;
+  justify-content: space-around;
+  user-select: none;
+
+  &__description {
+    max-width: 241px;
+    width: 100%;
+  }
+
+  .description {
+    &__title {
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-right: 42px;
+      }
+    }
+    &__text {
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin: 24px 0px;
+      }
+    }
+
+    &__button {
+      button {
+        width: 162px;
+        height: 48px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 6px;
+        margin: 24px 0px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    vertical-align: middle;
+    img {
+      max-width: 676px;
+      width: 100%;
+    }
+  }
+}
