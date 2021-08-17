@@ -1,9 +1,9 @@
-.newsletter {
-  background-color: black;
+.contact {
+  background-color: #EE0E7D;
   &__content{
     display: flex;
     max-width: 1440px;
-    height: 436px;
+    height: 480px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -13,7 +13,6 @@
   &__title{
     width: 676px;
     text-align: center;
-    padding: 0 64px;
     h1{
       color: white;
       font-style: normal;
@@ -24,34 +23,24 @@
     }
   }
 
-  &__subscript{
+  &__contact{
     display: flex;
-    width: 502px;
-    margin: 24px auto;
-    vertical-align: middle;
-    align-items: center;
-    border-bottom: 1px solid #03FFA5;
-  }
-  &__input{
-    height: 24px;
-    padding: 6px 12px;
-    color: #fff;
-    font-size: 16px;
-    background-color: #000;
-    border: none;
-    flex: 1 1 auto;
-  }
-
-  &__button{
+    flex-direction: column;
     text-align: center;
-    button{
-      color: #03FFA5;
-      font-weight: bold;
-      border: none;
+    margin-top: 32px;
+    color: white;
+    font-style: normal;
+    small{
+      font-weight: 500;
       font-size: 16px;
-      line-height: 40px;
-      text-transform: uppercase;
-      background-color: transparent;
+      line-height: 24px;
+    }
+    a{
+      color: white;
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 24px;
     }
   }
   

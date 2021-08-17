@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Banner from '../../components/MainBanner';
 import Newsletter from '../../components/Newsletter';
+import Contact from '../../components/Contact';
 
 export default function Dashboard() {
   document.title = 'Home'
@@ -22,6 +23,7 @@ export default function Dashboard() {
     <div>
         <Header />
         <Banner/>
+        <Contact/>
         <Newsletter/>
         <Footer />
     </div>
