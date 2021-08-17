@@ -4,5 +4,129 @@
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
-  
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px auto;
+    
+  }
+  &__context {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .slogan {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    .content {
+      width: 451px;
+      float: left;
+      h1 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        width: 329px;
+        margin: 25px 0 40px;
+      }
+      .btn {
+        font-family: "Barlow", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        border: 1px solid #000000;
+        border-radius: 6px;
+        padding: 12px 24px;
+        width: 196px;
+        height: 48px;
+      }
+    }
+  }
+  &__cards {
+    position: relative;
+    .cards{
+      width: 100%;
+      padding: 0 15px;
+      max-width: 100%;
+      &__item-1,
+      &__item-2,
+      &__item-3 {
+        position: absolute;
+        width: 210px;
+        height: 270px;
+        background: #ffffff;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        &--content {
+          width: 100%;
+          margin: 0 auto;
+          padding: 10px;
+          img {
+            display: inherit;
+            margin: 0 auto;
+            width: 170px;
+            height: 165px;
+          }
+          button {
+            display: inherit;
+            border-radius: 30px;
+          }
+        }
+      }
+
+      &__item-1 {
+        top: 40px;
+        left: 160px;
+        z-index: 3;
+        img {
+          width: 128px;
+          height: 134px;
+        }
+        button {
+          margin: 60px auto 0;
+        }
+      }
+      &__item-2 {
+        top: 160px;
+        z-index: 2;
+        img {
+          width: 183px;
+          height: 190px;
+        }
+        button {
+          margin: 10px auto 0;
+        }
+      }
+      &__item-3 {
+        top: 210px;
+        left: 300px;
+        z-index: 1;
+        img {
+          width: 170px;
+          height: 165px;
+        }
+        button {
+          margin: 30px auto 0;
+        }
+      }
+      
+    }
+  }
 }
