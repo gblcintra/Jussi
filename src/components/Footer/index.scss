@@ -1,5 +1,6 @@
 .footer {
     background-color: black;
+    user-select: none;
     &__content {
         display: flex;
         max-width: 1024px;

@@ -77,5 +77,9 @@
     left: 0;
     z-index: 8;
   }
-
+}
+body{
+  &.active{
+    overflow: hidden;
+  }
 }

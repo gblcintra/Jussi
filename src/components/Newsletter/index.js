@@ -11,7 +11,7 @@ export default function Newsletter() {
         </div>
         <div className="newsletter__subscript">
           <input className="newsletter__input" placeholder="Digite seu e-mail" />
-          <div class="newsletter__button">
+          <div className="newsletter__button">
             <button
               type="button">
               CADASTRAR

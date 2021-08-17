@@ -3,6 +3,8 @@
   margin: 8px auto;
   z-index: 10;
   background-color: white;
+  user-select: none;
+
   .nav {
     display: flex;
     align-items: center;

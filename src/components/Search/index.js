@@ -17,6 +17,7 @@ export default function Search() {
       // console.error(err);
       // alert('Imagem não encontrado')
     } finally {
+      document.body.classList.add('active')
       document.getElementById('dropdown').classList.add('active');
       document.getElementById('result')?.classList.add('active')
     }
@@ -26,6 +27,7 @@ export default function Search() {
   const handleOnInputChange = (event) => {
     const query = event.target.value;
     if (!query) {
+      document.body.classList.remove('active')
       document.getElementById('result').classList.remove('active')
       document.getElementById('dropdown').classList.remove('active')
     } else {
@@ -35,6 +37,7 @@ export default function Search() {
 
   const removeSearch = () => {
     document.getElementById('search__input').value = '';
+    document.body.classList.remove('active')
     document.getElementById('result').classList.remove('active')
     document.getElementById('dropdown').classList.remove('active')
   }
