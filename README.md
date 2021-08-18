@@ -27,6 +27,7 @@ This project is using Sass as a CSS pre-processor.
 
 ## Use CSS BEM
 Methodology for class naming in CSS, which helps you create reusable and maintainable code.
+See the sectio about [CSS BEM](https://en.bem.info/methodology/css/) for more information.
 
 ## Requirements
 
