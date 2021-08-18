@@ -68,16 +68,18 @@ export default function Search() {
 
       {imagemPexels.length > 0 && (
         <>
-          <div className="result" id="result" ref={resultsRef}>
-            {imagemPexels.map((imagem) => (
-              <a className="result__context" key={imagem.id} target="__blank" href={imagem.photographer_url}>
-                <div className="result__item">
-                  <img className="result__item--image" src={imagem.src.small} alt={imagem.photographer} />
-                </div>
-                <h6 className="result__item--autor"><small>Fotografo:</small><br/> {imagem.photographer}</h6>
-              </a>
-            ))
-            }
+          <div className="result" ref={resultsRef}>
+            <div className="result__box">
+              {imagemPexels.map((imagem) => (
+                <a className="result__context" key={imagem.id} target="__blank" href={imagem.photographer_url}>
+                  <div className="result__item">
+                    <img className="result__item--image" src={imagem.src.small} alt={imagem.photographer} />
+                  </div>
+                  <h6 className="result__item--autor"><small>Fotografo:</small><br/> {imagem.photographer}</h6>
+                </a>
+              ))
+              }
+            </div>
           </div>
           <div id="dropdown" onClick={removeSearch} ref={dropdownRef}></div>
         </>
