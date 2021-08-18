@@ -1,7 +1,10 @@
 import './index.scss'
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+
 import { FiSearch } from "react-icons/fi";
+
 import api from '../../../services/api';
+
 import { Response, Photo } from '../../../interfaces';
 
 export default function Search() {
@@ -17,10 +20,14 @@ export default function Search() {
       //api para pegar as infos com limite de 5 itens
       const { data } = await api.get<Response>(`?query=${query}&per_page=5`);
       setImagemPexels(data.photos);
+      
     } catch (err) {
+      //catch retorna se a api não estiver funcionando 
+      //ou algo não foi encontrado
       console.error(err);
       
     } finally {
+      //se tudo tiver certo, add essas clases para melhorar a experiencia na pesquisa
       document.body.classList.add('active')
       dropdownRef.current?.classList.add('active');
       resultsRef.current?.classList.add('active')
@@ -35,12 +42,11 @@ export default function Search() {
     dropdownRef.current?.classList.remove('active');
   }
 
+  //passa o dado do input quando alterado
+  //fazendo com que n'ao precise renderizar tudo novamente
   useEffect(() => {
-    console.log('estado input', inputText);
     if (!inputText) {
-      document.body.classList.remove('active')
-      resultsRef.current?.classList.remove('active')
-      dropdownRef.current?.classList.remove('active')
+      removeSearch();
     } else {
       searchResult(inputText);
     }
@@ -54,7 +60,6 @@ export default function Search() {
         <input
           type="text"
           className="search__input"
-          id="search__input"
           value={inputText}
           onChange={({ target: { value }}) => setInputText(value)}
           placeholder="Buscar" />

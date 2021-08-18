@@ -1,7 +1,7 @@
 
 import './index.scss';
-import { BannerItem } from '../../interfaces'
 import React from 'react';
+import { BannerItem } from '../../interfaces'
 import Whisky from '../../assets/Rectangle 1.png';
 import Geladeira from '../../assets/Rectangle 2.png';
 import Batedeira from '../../assets/Rectangle 3.png';

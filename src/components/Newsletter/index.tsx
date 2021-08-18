@@ -1,13 +1,17 @@
 
-import { useRef } from 'react';
 import './index.scss';
+import { useRef } from 'react';
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Newsletter() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleSendNewsletter() {
     if(inputRef.current) {
-      console.log('valor do input', inputRef.current.value);
+      let email:any = inputRef.current.value as string
+      toast.success(`Email cadastrado: ${email}`);
     }
   }
 

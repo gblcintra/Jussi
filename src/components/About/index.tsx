@@ -1,5 +1,6 @@
 
 import './index.scss'
+import React from 'react';
 
 import Escritorio from '../../assets/escritorio-jussi.png';
 
@@ -21,7 +22,7 @@ export default function Products() {
         </div>
       </div>
       <div className="about__image" >
-        <img src={Escritorio} alt="Escritório" />
+        <img src={ Escritorio } alt="Escritório" />
       </div>
     </section>
   )
