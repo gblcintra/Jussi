@@ -31,8 +31,7 @@
     .box {
       &__text {
         width: 50%;
-        float: left;
-        @media screen and(max-width:1080px) {
+        @media screen and(max-width:757px) {
           width: 100%;
         }
       }
@@ -79,8 +78,7 @@
   &__itens {
     position: relative;
     width: 50%;
-    float: right;
-    @media screen and(max-width:1080px) {
+    @media screen and(max-width:757px) {
       width: 80%;
     }
     @media screen and(max-width:600px) {

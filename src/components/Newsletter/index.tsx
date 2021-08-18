@@ -1,7 +1,15 @@
 
+import { useRef } from 'react';
 import './index.scss';
 
 export default function Newsletter() {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  function handleSendNewsletter() {
+    if(inputRef.current) {
+      console.log('valor do input', inputRef.current.value);
+    }
+  }
 
   return (
     <section className="newsletter">
@@ -10,9 +18,10 @@ export default function Newsletter() {
           <h1>Receba novidades da nossa área de produtos digitais.</h1>
         </div>
         <div className="newsletter__subscript">
-          <input className="newsletter__input" placeholder="Digite seu e-mail" />
+          <input className="newsletter__input" placeholder="Digite seu e-mail" ref={inputRef}/>
           <div className="newsletter__button">
             <button
+              onClick={handleSendNewsletter}
               type="button">
               CADASTRAR
             </button>

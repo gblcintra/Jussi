@@ -1,49 +1,49 @@
-
+import { Product } from '../../interfaces'
 import './index.scss'
 
 export default function Products() {
 
   //array de produtos para automatizar na construção dos campos
-  const products = [
+  const products: Product[] = [
     {
-      "id": 1,
-      "name": "Nome do Produto #1",
-      "descriptions": [
-        { "id": 1, "name": "Feature 1" },
-        { "id": 2, "name": "Feature 2" },
-        { "id": 3, "name": "Feature 3" }
+      id: 1,
+      name: "Nome do Produto #1",
+      descriptions: [
+        { id: 1, name: "Feature 1" },
+        { id: 2, name: "Feature 2" },
+        { id: 3, name: "Feature 3" }
       ],
-      "image": "P1"
+      image: "P1"
     },
     {
-      "id": 2,
-      "name": "Nome do Produto #2",
-      "descriptions": [
-        { "id": 1, "name": "Feature 1" },
-        { "id": 2, "name": "Feature 2" },
-        { "id": 3, "name": "Feature 3" }
+      id: 2,
+      name: "Nome do Produto #2",
+      descriptions: [
+        { id: 1, name: "Feature 1" },
+        { id: 2, name: "Feature 2" },
+        { id: 3, name: "Feature 3" }
       ],
-      "image": "P2"
+      image: "P2"
     },
     {
-      "id": 3,
-      "name": "Nome do Produto #3",
-      "descriptions": [
-        { "id": 1, "name": "Feature 1" },
-        { "id": 2, "name": "Feature 2" },
-        { "id": 3, "name": "Feature 3" }
+      id: 3,
+      name: "Nome do Produto #3",
+      descriptions: [
+        { id: 1, name: "Feature 1" },
+        { id: 2, name: "Feature 2" },
+        { id: 3, name: "Feature 3" }
       ],
-      "image": "P3"
+      image: "P3"
     },
     {
-      "id": 4,
-      "name": "Nome do Produto #4",
-      "descriptions": [
-        { "id": 1, "name": "Feature 1" },
-        { "id": 2, "name": "Feature 2" },
-        { "id": 3, "name": "Feature 3" }
+      id: 4,
+      name: "Nome do Produto #4",
+      descriptions: [
+        { id: 1, name: "Feature 1" },
+        { id: 2, name: "Feature 2" },
+        { id: 3, name: "Feature 3" }
       ],
-      "image": "P4"
+      image: "P4"
     }
   ];
 
