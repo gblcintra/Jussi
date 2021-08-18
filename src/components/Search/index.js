@@ -13,7 +13,6 @@ export default function Search() {
     try {
       //api para pegar as infos com limite de 5 itens
       const response = await api.get(`?query=${query}&per_page=5`);
-      console.log("🚀 ~ file: index.js ~ line 16 ~ searchResult ~ response", response)
       setImagemPexels(response.data.photos);
     } catch (err) {
       console.error(err);
