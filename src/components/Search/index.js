@@ -13,6 +13,7 @@ export default function Search() {
     try {
       //api para pegar as infos com limite de 5 itens
       const response = await api.get(`?query=${query}&per_page=5`);
+      console.log("🚀 ~ file: index.js ~ line 16 ~ searchResult ~ response", response)
       setImagemPexels(response.data.photos);
     } catch (err) {
       console.error(err);
@@ -64,7 +65,7 @@ export default function Search() {
                 <div className="result__item">
                   <img className="result__item--image" src={imagem.src.small} alt={imagem.photographer} />
                 </div>
-                <h6 className="result__item--autor">{imagem.photographer}</h6>
+                <h6 className="result__item--autor"><small>Fotografo:</small><br/> {imagem.photographer}</h6>
               </a>
             ))
             }
