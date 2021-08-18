@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logoJussiVectorGreen.svg';
 
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
-import Search from '../Search';
+import Search from './Search';
 
 
 

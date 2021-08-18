@@ -2,7 +2,7 @@
 import './index.scss'
 import { useState } from 'react';
 import { FiSearch } from "react-icons/fi";
-import api from '../../services/api';
+import api from '../../../services/api';
 
 export default function Search() {
   //armazenar o array das imagens pesquisadas
