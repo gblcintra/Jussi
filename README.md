@@ -23,7 +23,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 https://react-icons.github.io/react-icons/icons?name=fi
 
 ## Use Sass
-This project is using Sass as a CSS pre-processor.
+This project is using Sass as a CSS pre-processor. [SASS](https://sass-lang.com/documentation) for more information.
 
 ## Use CSS BEM
 Methodology for class naming in CSS, which helps you create reusable and maintainable code.
