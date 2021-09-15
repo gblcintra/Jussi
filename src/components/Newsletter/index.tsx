@@ -10,8 +10,13 @@ export default function Newsletter() {
 
   function handleSendNewsletter() {
     if(inputRef.current) {
-      let email:any = inputRef.current.value as string
-      toast.success(`Email cadastrado: ${email}`);
+      if(inputRef.current.value !== ''){
+        let email:any = inputRef.current.value as string
+        toast.success(`Email cadastrado: ${email}`);
+      }
+      else{
+        toast.error('Preencha com um email valido')
+      }
     }
   }
 

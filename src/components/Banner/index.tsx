@@ -55,18 +55,6 @@ export default function Banner() {
                 </div>
               ))
             }
-            {/* <div className="item__item-2">
-              <div className="item__content">
-                <img src={Geladeira} alt="Geladeira" />
-                <button >Mais Detalhes</button>
-              </div>
-            </div>
-            <div className="item__item-3">
-              <div className="item__content">
-                <img src={Whisky} alt="Whisky" />
-                <button>Adicionar à sacola</button>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
