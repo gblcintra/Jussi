@@ -29,6 +29,10 @@ This project is using Sass as a CSS pre-processor. [SASS](https://sass-lang.com/
 Methodology for class naming in CSS, which helps you create reusable and maintainable code.
 See the sectio about [CSS BEM](https://en.bem.info/methodology/css/) for more information.
 
+## Use TypeScript
+TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language.
+For more information [TypeScript](https://www.typescriptlang.org/)
+
 ## Requirements
 
 - [X] Usar o React como biblioteca base do projeto;
